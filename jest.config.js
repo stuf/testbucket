@@ -1,6 +1,6 @@
-const { getDirectories } = require('./config/jest/alias-directories');
+const { getDirectories } = require('./alias-directories');
 
-const dirs = getDirectories(__dirname);
+const dirs = getJestDirectories(__dirname);
 
 const baseMappers = {
   '\\.(jpg|jpeg|png|gif|ico|svg|eot|ttf|woff|woff2)$': '<rootDir>/__mocks__/fileMock.js',
